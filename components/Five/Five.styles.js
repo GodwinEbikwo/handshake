@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Root = styled.section`
   position: relative;
-  /* background-color: #1c1c20; */
   padding-bottom: 5vw;
 `;
 
@@ -42,7 +41,7 @@ export const RootContent = styled.div`
 `;
 
 export const RootContentInner = styled.div`
-  background: var(--sage3);
+  box-shadow: -1px 12px 53px -4px rgba(197, 194, 194, 0.62);
   padding: var(--spacer-md) calc(var(--px-2) * 2);
 
   @media (min-width: 1024px) {

@@ -17,7 +17,7 @@ export default function Home() {
       <Three />
       <Carousel />
       <Five />
-      <Contact />
+      {/* <Contact /> */}
     </Layout>
   );
 }

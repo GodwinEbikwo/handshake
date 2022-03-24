@@ -3,12 +3,19 @@ export const fade = {
   enter: {
     opacity: 1,
     transition: {
-      duration: 0.6,
+      duration: 1,
     },
   },
   exit: {
     opacity: 0,
-    transition: { duration: 0.4 },
+  },
+};
+
+const v = {
+  initial: { opacity: 0 },
+  enter: {
+    opacity: 1,
+    transition: { staggerChildren: 0.35, delayChildren: 0.035 },
   },
 };
 

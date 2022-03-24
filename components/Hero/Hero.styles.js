@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { m } from "framer-motion";
 
-export const Root = styled.div`
+export const Root = styled(m.div)`
   position: relative;
   padding: 0 var(--px-2);
   padding-top: calc(var(--spacer-lg) * 2);

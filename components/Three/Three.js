@@ -1,6 +1,7 @@
 import { Root, RootInner } from "./Three.styles";
 import Image from "next/image";
 import Link from "next/link";
+import { fade } from "@helpers/transitions";
 
 function ImageCard() {
   return (
@@ -41,7 +42,13 @@ function ImageCard() {
 
 export default function Three() {
   return (
-    <Root data-scroll-section>
+    <Root
+      data-scroll-section
+      initial="initial"
+      whileInView="enter"
+      variants={fade}
+      viewport={{ margin: "8px" }}
+    >
       <RootInner>
         <div className="flex flex-wrap border">
           <div className="left">

@@ -1,10 +1,17 @@
 import React from "react";
 import { Root, RootTitle } from "./One.styles";
 import Link from "next/link";
+import { fade } from "@helpers/transitions";
 
 export default function One() {
   return (
-    <Root data-scroll-section>
+    <Root
+      data-scroll-section
+      initial="initial"
+      whileInView="enter"
+      variants={fade}
+      viewport={{ margin: "8px" }}
+    >
       <div className="flex relative border">
         <div className="absolute text-uppercase small-text">Who we are</div>
         <RootTitle>

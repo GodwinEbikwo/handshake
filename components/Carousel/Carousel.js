@@ -3,6 +3,7 @@ import { PrevButton, NextButton } from "./CarouselBtns";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import { Root, RootInner, imgData, RootTitle } from "./Carousel.styles";
+import { fade } from "@helpers/transitions";
 
 const Carousel = () => {
   const [viewportRef, embla] = useEmblaCarousel({
@@ -29,7 +30,13 @@ const Carousel = () => {
   }, [embla, onSelect]);
 
   return (
-    <Root data-scroll-section>
+    <Root
+      data-scroll-section
+      initial="initial"
+      whileInView="enter"
+      variants={fade}
+      viewport={{ margin: "8px" }}
+    >
       <RootInner>
         <div className="heading">
           <div className="flex relative">

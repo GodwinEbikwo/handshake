@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { m } from "framer-motion";
 
 export const imgData = [
   {
@@ -57,7 +58,7 @@ export const imgData = [
   },
 ];
 
-export const Root = styled.div`
+export const Root = styled(m.div)`
   position: relative;
   background-color: #1c1c20;
   color: rgba(255, 255, 255, 0.9);

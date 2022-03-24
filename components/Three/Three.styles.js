@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { m } from "framer-motion";
 
-export const Root = styled.section`
+export const Root = styled(m.section)`
   position: relative;
   margin: 5vw calc(var(--px-2) * 2);
   padding-top: 5vw;

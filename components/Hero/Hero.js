@@ -2,7 +2,7 @@ import React from "react";
 import { Root, RootInner, RootTitle, ImageBox } from "./Hero.styles";
 import Image from "next/image";
 import { m } from "framer-motion";
-import { revealInOut, revealIn } from "@helpers/transitions";
+import { revealInOut, revealIn, fade } from "@helpers/transitions";
 import { FancySpan } from "@helpers/fancy-span";
 
 export default function Hero() {

@@ -1,5 +1,6 @@
 export const PrevButton = ({ enabled, onClick }) => (
   <button
+    aria-label="previous button"
     className="embla__button embla__button--prev"
     onClick={onClick}
     disabled={!enabled}
@@ -22,6 +23,7 @@ export const PrevButton = ({ enabled, onClick }) => (
 
 export const NextButton = ({ enabled, onClick }) => (
   <button
+    aria-label="next button"
     className="embla__button embla__button--next"
     onClick={onClick}
     disabled={!enabled}

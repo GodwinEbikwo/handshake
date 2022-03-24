@@ -19,7 +19,6 @@ export default function Footer() {
             <div className="footer_brief">
               <form className="flex">
                 <label
-                  id="email__input"
                   aria-label="search field"
                   htmlFor="email"
                   className="hidden"

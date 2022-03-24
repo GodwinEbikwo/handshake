@@ -7,6 +7,7 @@ import Three from "@components/Three";
 import Four from "@components/Four";
 import Carousel from "@components/Carousel";
 import Five from "@components/Five";
+import Contact from "@components/Contact";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Four />
       <Carousel />
       <Five />
+      <Contact />
     </Layout>
   );
 }

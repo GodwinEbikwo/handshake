@@ -13,15 +13,20 @@ import Accordion from "@components/Accordion";
 
 export default function Five() {
   return (
-    <Root>
+    <Root data-scroll-section>
       <RootInner>
         <div className="relative banner_img">
-          <Image
-            src="https://res.cloudinary.com/godwinebikwo/image/upload/v1648040830/spacejoy-9M66C_w_ToM-unsplash_bv11iz.jpg"
-            width={1920}
-            height={1013}
-            alt="people"
-          />
+          <div className="overflow-hidden mx-auto" data-scroll>
+            <div data-scroll data-scroll-speed="-2.5">
+              <Image
+                src="https://res.cloudinary.com/godwinebikwo/image/upload/v1648040830/spacejoy-9M66C_w_ToM-unsplash_bv11iz.jpg"
+                width={1920}
+                height={1013}
+                alt="people"
+                className="a-img"
+              />
+            </div>
+          </div>
 
           <div className="absolute">
             <span>Savannah's Garden</span> <br />

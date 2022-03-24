@@ -1,10 +1,13 @@
 import React from "react";
 import { Root, RootInner, RootTitle, ImageBox } from "./Hero.styles";
 import Image from "next/image";
+import { m } from "framer-motion";
+import { revealInOut, revealIn } from "@helpers/transitions";
+import { FancySpan } from "@helpers/fancy-span";
 
 export default function Hero() {
   return (
-    <Root>
+    <Root data-scroll-section>
       <div className="left text-uppercase">
         <div className="round-button">
           <button
@@ -39,24 +42,55 @@ export default function Hero() {
           </button>
         </div>
       </div>
+
       <div className="right text-uppercase hide-for-mobile">
-        <span>Based in</span>
-        <span>London England</span>
+        <FancySpan>
+          <m.div variants={revealIn}>
+            <span>Based in</span>
+          </m.div>
+          <m.div variants={revealIn}>
+            <span>London England</span>
+          </m.div>
+        </FancySpan>
       </div>
+
       <RootInner>
-        <RootTitle>
-          <span>Residential</span> <br />
-          <span>Architects</span>
+        <RootTitle
+          data-scroll
+          data-scroll-speed="1.25"
+          data-scroll-direction="vertical"
+        >
+          <FancySpan>
+            <m.div variants={revealInOut}>
+              <span className="block">Residential Architects</span>
+            </m.div>
+          </FancySpan>
         </RootTitle>
-        <ImageBox>
+
+        <ImageBox data-scroll className="hide-for-desktop">
           <Image
-            src="https://res.cloudinary.com/godwinebikwo/image/upload/v1627453776/jason-wang-5MG8cQbw-T8-unsplash_vb8la2.jpg"
+            src="https://res.cloudinary.com/godwinebikwo/image/upload/v1648032402/pexels-houzlook-com-3356416_tfqkns.jpg"
             layout="fill"
             objectFit="cover"
             alt="plant"
-            className="hero-img"
+            className="a-img"
           />
         </ImageBox>
+
+        <div
+          className="overflow-hidden mx-auto overlap hide-for-mobile"
+          data-scroll
+        >
+          <ImageBox data-scroll data-scroll-speed="-2.5">
+            <Image
+              src="https://res.cloudinary.com/godwinebikwo/image/upload/v1648032402/pexels-houzlook-com-3356416_tfqkns.jpg"
+              layout="fill"
+              objectFit="cover"
+              alt="plant"
+              className="a-img"
+            />
+          </ImageBox>
+        </div>
       </RootInner>
     </Root>
   );

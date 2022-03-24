@@ -5,8 +5,8 @@ export const Root = styled.div`
   padding: 0 calc(var(--px-2) * 2);
   padding-top: calc(var(--spacer));
   padding-bottom: calc(var(--spacer-md) * 2);
-  background-color: #1c1c20;
-  color: rgba(255, 255, 255, 0.9);
+  /* background-color: #1c1c20;
+  color: rgba(255, 255, 255, 0.9); */
 
   @media (min-width: 1024px) {
     padding-top: 5vw;
@@ -32,7 +32,7 @@ export const RootContent = styled.div`
   position: relative;
 
   .right_para {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 1.5em;
   }
 
@@ -71,8 +71,8 @@ export const RootContent = styled.div`
     padding: 5rem;
     width: 90px;
     height: 90px;
-    background: var(--white);
-    color: var(--black);
+    background: var(--black);
+    color: var(--white);
     white-space: nowrap;
     border-radius: 9999px;
     line-height: normal;

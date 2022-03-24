@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { m } from "framer-motion";
 
-export const HeaderBox = styled.header`
+export const HeaderBox = styled(m.header)`
   width: 100%;
   position: absolute;
   top: 0;

@@ -4,6 +4,8 @@ export const FooterRoot = styled.footer`
   min-height: 50vh;
   position: relative;
   padding: 0 calc(var(--px-2) * 2);
+  background-color: #1c1c20;
+  color: rgba(255, 255, 255, 0.9);
 `;
 
 export const FooterInner = styled.div`
@@ -48,12 +50,12 @@ export const FooterContent = styled.div`
     width: 100%;
     height: 100%;
     text-transform: uppercase;
-    padding: 0.75em 0.5em;
+    padding: 0.75em 0.65em;
     font-size: var(--fs-static);
     transition: 180ms box-shadow ease-in-out;
     cursor: auto;
     text-align: start;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-right: 0px;
     background-color: transparent;
     font-size: 13.5px;
@@ -61,12 +63,13 @@ export const FooterContent = styled.div`
 
   .email_btn {
     font-size: 13.5px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0.15em 0.5em;
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--black);
     transition: all 300ms ease;
-    background: var(--black);
+    background: var(--white);
+    font-weight: 600;
   }
 
   .email_btn:hover {

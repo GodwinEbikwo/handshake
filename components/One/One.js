@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function One() {
   return (
-    <Root>
+    <Root data-scroll-section>
       <div className="flex relative border">
         <div className="absolute text-uppercase small-text">Who we are</div>
         <RootTitle>

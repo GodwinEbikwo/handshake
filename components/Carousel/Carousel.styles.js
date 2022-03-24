@@ -68,6 +68,23 @@ export const RootInner = styled.div`
   position: relative;
   padding: 5vw var(--px-2);
 
+  .absolute {
+    top: 1em;
+  }
+
+  .small-text {
+    font-size: var(--size-300);
+  }
+
+  .heading {
+    padding: 5vw calc(var(--px-2) * 2);
+    padding-top: 8vw;
+
+    .small-text {
+      font-size: var(--size-300);
+    }
+  }
+
   @media (min-width: 1024px) {
     padding: 1vw 0;
   }
@@ -87,5 +104,14 @@ export const RootInner = styled.div`
     justify-content: center;
     padding: 1rem 0;
     margin-top: var(--spacer);
+  }
+`;
+
+export const RootTitle = styled.h1`
+  text-indent: 45%;
+  line-height: 1.2;
+
+  @media (min-width: 1024px) {
+    text-indent: 22%;
   }
 `;

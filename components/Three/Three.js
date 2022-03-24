@@ -41,7 +41,7 @@ function ImageCard() {
 
 export default function Three() {
   return (
-    <Root>
+    <Root data-scroll-section>
       <RootInner>
         <div className="flex flex-wrap border">
           <div className="left">

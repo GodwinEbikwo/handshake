@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { PrevButton, NextButton } from "./CarouselBtns";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
-import { Root, RootInner, imgData } from "./Carousel.styles";
+import { Root, RootInner, imgData, RootTitle } from "./Carousel.styles";
 
 const Carousel = () => {
   const [viewportRef, embla] = useEmblaCarousel({
@@ -29,8 +29,18 @@ const Carousel = () => {
   }, [embla, onSelect]);
 
   return (
-    <Root>
+    <Root data-scroll-section>
       <RootInner>
+        <div className="heading">
+          <div className="flex relative">
+            <div className="absolute text-uppercase small-text">Our work</div>
+            <RootTitle>
+              With over two decades of work to show, we’re devoted to helping
+              our clients build a better, more beautiful world.
+            </RootTitle>
+          </div>
+        </div>
+
         <div className="embla">
           <div className="embla__viewport" ref={viewportRef}>
             <div className="embla__container">

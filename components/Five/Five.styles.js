@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Root = styled.section`
   position: relative;
-  background-color: #1c1c20;
+  /* background-color: #1c1c20; */
   padding-bottom: 5vw;
 `;
 
@@ -10,10 +10,11 @@ export const RootInner = styled.div`
   position: relative;
 
   .banner_img {
-    z-index: 0;
+    z-index: -1;
   }
 
   .absolute {
+    z-index: 4;
     top: 1em;
     left: var(--px-2);
 
@@ -41,6 +42,7 @@ export const RootContent = styled.div`
 `;
 
 export const RootContentInner = styled.div`
+  background: var(--sage3);
   padding: var(--spacer-md) calc(var(--px-2) * 2);
 
   @media (min-width: 1024px) {

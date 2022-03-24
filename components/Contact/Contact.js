@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <Root>
+    <Root data-scroll-section>
       <RootInner>
         <RootTitle>Contact</RootTitle>
 
@@ -20,10 +20,10 @@ export default function Contact() {
           <div className="right_block">
             <div className="right_inner_block">
               <div className="right_para">
-                <h3>
+                <h4>
                   Think we might be a good fit for your upcoming project? Reach
                   out — we’d love to talk details and see how we can help.
-                </h3>
+                </h4>
               </div>
 
               <div className="pt">

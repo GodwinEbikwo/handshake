@@ -4,10 +4,7 @@ import { m } from "framer-motion";
 import { variantsAni, menuInOut } from "@helpers/transitions";
 import Div100vh from "react-div-100vh";
 import { useMenu } from "@context/app-context";
-
-export function FancySpan({ children }) {
-  return <span className="block relative overflow-hidden">{children}</span>;
-}
+import { FancySpan } from "@helpers/fancy-span";
 
 function List({ href, onClick, children, a11y }) {
   return (

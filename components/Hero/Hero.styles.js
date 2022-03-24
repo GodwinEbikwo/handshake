@@ -65,6 +65,10 @@ export const RootInner = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  .overlap {
+    margin-top: -3.5vw;
+  }
 `;
 
 export const RootTitle = styled.h1`
@@ -81,7 +85,7 @@ export const RootTitle = styled.h1`
 export const ImageBox = styled.div`
   position: relative;
   overflow: hidden;
-  margin-top: -3.5vw;
+  margin-top: 0;
   width: 100%;
   height: 640px;
 

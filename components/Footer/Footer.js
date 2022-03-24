@@ -2,7 +2,7 @@ import { FooterRoot, FooterInner, FooterContent } from "./Footer.styles";
 
 export default function Footer() {
   return (
-    <FooterRoot>
+    <FooterRoot data-scroll-section>
       <FooterInner>
         <FooterContent>
           <div className="left_block">

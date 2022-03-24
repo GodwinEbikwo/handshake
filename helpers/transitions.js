@@ -40,8 +40,9 @@ export const revealInOut = {
     opacity: 1,
     rotateX: "0deg",
     transition: {
-      duration: 1.2,
+      duration: 1.4,
       ease: [0.165, 0.84, 0.44, 1],
+      delay: 0.4,
     },
   },
   exit: {
@@ -52,14 +53,14 @@ export const revealInOut = {
 
 export const revealIn = {
   initial: {
-    y: "110%",
+    y: "140%",
     opacity: 0,
   },
   enter: {
     y: "0%",
     opacity: 1,
     transition: {
-      duration: 1.2,
+      duration: 1.5,
       ease: [0.165, 0.84, 0.44, 1],
     },
   },
@@ -145,5 +146,20 @@ export const menuInOut = {
     y: "110%",
     opacity: 0,
     transition: { duration: 0.45, ease: [0.83, 0, 0.17, 1] },
+  },
+};
+
+export const navLogoReveal = {
+  initial: { y: "-110%" },
+  enter: {
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: [0.77, 0, 0.175, 1],
+    },
+  },
+  exit: {
+    y: "100%",
+    transition: { ease: [0.77, 0, 0.175, 1] },
   },
 };

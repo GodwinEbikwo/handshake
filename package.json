@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
     "embla-carousel-react": "^6.2.0",
     "framer-motion": "^6.2.8",
     "next": "12.1.0",
     "preact": "^10.6.6",
     "react": "17.0.2",
+    "react-div-100vh": "^0.7.0",
     "react-dom": "17.0.2",
     "styled-components": "^5.3.3"
   }

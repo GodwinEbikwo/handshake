@@ -34,7 +34,7 @@ export const RootInner = styled.div`
 export const RootContent = styled.div`
   position: relative;
   background: white;
-  margin: 0 calc(var(--px-2));
+  margin: 0 calc(var(--px-2) * 2);
   margin-top: -5vw;
   z-index: 4;
   min-height: 50vh;

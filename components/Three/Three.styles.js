@@ -9,7 +9,7 @@ export const Root = styled.section`
 export const RootInner = styled.div`
   .border {
     padding-bottom: 3.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid var(--border-color);
   }
 
   .left {

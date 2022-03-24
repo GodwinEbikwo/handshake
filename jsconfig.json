@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@lib/*": ["lib/*"],
+      "@config/*": ["config/*"],
       "@context/*": ["context/*"],
       "@components/*": ["components/*"],
       "@helpers/*": ["helpers/*"],

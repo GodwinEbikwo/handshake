@@ -1,8 +1,13 @@
 import Link from "next/link";
 import { HeaderBox, HeaderInner } from "./Header.styles";
 import { Insta, Twitter, LinkedIn } from "./logo";
+import { m } from "framer-motion";
+import { useMenu } from "@context/app-context";
+import { MenuToggle } from "./toggle";
+import Menu from "./menu";
 
 const Header = () => {
+  const { menuOpen, setMenuOpen } = useMenu();
   return (
     <HeaderBox>
       <HeaderInner>
@@ -49,6 +54,16 @@ const Header = () => {
             </Link>
           </div>
         </nav>
+
+        <m.div
+          initial={false}
+          animate={menuOpen ? "enter" : "exit"}
+          exit="exit"
+          className="hide-for-desktop"
+        >
+          <MenuToggle toggle={() => setMenuOpen(!menuOpen)} />
+          <Menu />
+        </m.div>
       </HeaderInner>
     </HeaderBox>
   );

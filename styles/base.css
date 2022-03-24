@@ -1,6 +1,6 @@
 :root {
   --py-2: 1rem;
-  --px-2: 2.75vw;
+  --px-2: 2.5vw;
   --golden-ratio: 1.75rem;
   --max-width: 90rem;
 
@@ -284,4 +284,74 @@ p {
 .link--metis:hover::before {
   transform-origin: 0% 50%;
   transform: scale3d(1, 1, 1);
+}
+
+.hide-for-mobile {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.menu {
+  position: fixed;
+  background-color: var(--bg);
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: calc(var(--px-2) * 2);
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 1.15s cubic-bezier(0.77, 0, 0.18, 1);
+  z-index: -1;
+}
+
+.open {
+  clip-path: inset(0%);
+  transition: clip-path 1s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.menu_container {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.menu_hover li {
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.2s var(--easing);
+}
+
+.menu_hover:hover > li {
+  transition: opacity 400ms;
+  opacity: 0.5;
+}
+
+.menu_hover:hover > li:hover {
+  opacity: 1;
+}
+
+.menu-list_item {
+  margin-bottom: 1rem;
+}
+
+.menu_list-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--ls-sm);
+  font-family: var(--font-2);
+  color: var(--text-color);
 }

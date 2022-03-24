@@ -3,19 +3,20 @@ import styled from "styled-components";
 export const FooterRoot = styled.footer`
   min-height: 50vh;
   position: relative;
+  padding: 0 calc(var(--px-2) * 2);
 `;
 
 export const FooterInner = styled.div`
   position: relative;
-  padding: calc(var(--px-2) * 4) var(--px-2);
+  padding: calc(var(--px-2) * 4) 0;
 
   @media (min-width: 1024px) {
-    padding: var(--px-2);
+    padding: var(--px-2) 0;
   }
 
   .footer_bottom {
     bottom: 1em;
-    left: var(--px-2);
+    left: 0;
   }
 `;
 

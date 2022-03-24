@@ -2,6 +2,7 @@ import "@styles/main.css";
 import { useRouter } from "next/router";
 import { AnimatePresence } from "framer-motion";
 import Head from "next/head";
+import AppProvider from "@context/app-context";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -16,9 +17,11 @@ export default function App({ Component, pageProps }) {
           content="Hanshake is a residenctial practise of architects "
         />
       </Head>
-      <AnimatePresence exitBeforeEnter>
-        <Component {...pageProps} key={router.asPath} />
-      </AnimatePresence>
+      <AppProvider>
+        <AnimatePresence exitBeforeEnter>
+          <Component {...pageProps} key={router.asPath} />
+        </AnimatePresence>
+      </AppProvider>
     </>
   );
 }

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Root = styled.div`
   position: relative;
-  padding: 0 var(--px-2);
+  padding: 0 calc(var(--px-2) * 2);
   padding-top: calc(var(--spacer));
   padding-bottom: calc(var(--spacer-md) * 2);
   background-color: #1c1c20;

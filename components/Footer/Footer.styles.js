@@ -7,7 +7,11 @@ export const FooterRoot = styled.footer`
 
 export const FooterInner = styled.div`
   position: relative;
-  padding: var(--px-2);
+  padding: calc(var(--px-2) * 4) var(--px-2);
+
+  @media (min-width: 1024px) {
+    padding: var(--px-2);
+  }
 
   .footer_bottom {
     bottom: 1em;
@@ -31,8 +35,10 @@ export const FooterContent = styled.div`
   }
 
   .footer_brief {
-    max-width: 40ch;
     padding-top: 1.35rem;
+    @media (min-width: 1024px) {
+      max-width: 40ch;
+    }
   }
 
   .email_input {

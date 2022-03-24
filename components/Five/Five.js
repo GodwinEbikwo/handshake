@@ -28,10 +28,10 @@ export default function Five() {
             </div>
           </div>
 
-          <div className="absolute">
+          {/* <div className="absolute">
             <span>Savannah's Garden</span> <br />
             <span>Spring 2016</span>
-          </div>
+          </div> */}
         </div>
 
         <RootContent>

@@ -52,12 +52,13 @@ const Carousel = () => {
             <div className="embla__container">
               {imgData.map((img, i) => (
                 <div className="embla__slide" key={i}>
-                  <div className="embla__slide__inner">
+                  <div className="embla__slide__inner" data-scroll>
                     <Image
                       src={img.src}
                       width={450}
                       height={600}
                       alt="chairs"
+                      className="a-img"
                     />
                     <div className="flex space-between">
                       <h4 className="name">{img.name}</h4>

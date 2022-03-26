@@ -15,9 +15,10 @@ export const HeaderInner = styled.div`
   justify-content: space-between;
   padding: 1rem calc(var(--px-2) * 2);
   font-size: var(--size-300);
-  background: var(--bg);
+  /* background: var(--bg); */
   font-family: var(--font2);
   text-transform: uppercase;
+  mix-blend-mode: difference;
 
   @media (min-width: 1024px) {
     padding: 2rem var(--px-2);

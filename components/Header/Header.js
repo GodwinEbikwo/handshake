@@ -62,7 +62,7 @@ const Header = () => {
               <a className="logo" aria-label="Logo">
                 <FancySpan>
                   <m.span variants={navLogoReveal} className="block">
-                    Handshake
+                    handshake
                   </m.span>
                 </FancySpan>
               </a>

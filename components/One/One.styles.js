@@ -58,22 +58,6 @@ export const Root = styled(m.div)`
       margin-left: auto !important;
     }
   }
-
-  .button {
-    display: flex;
-    align-items: center;
-    justify-content: center !important;
-    text-align: center !important;
-    padding: 5rem;
-    width: 90px;
-    height: 90px;
-    background: var(--black);
-    color: var(--white);
-    white-space: nowrap;
-    border-radius: 9999px;
-    line-height: normal;
-    font-size: var(--size-500);
-  }
 `;
 
 export const RootTitle = styled.h1`

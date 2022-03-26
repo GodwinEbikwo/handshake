@@ -15,7 +15,7 @@ export default function One() {
       <div className="flex relative border">
         <div className="absolute text-uppercase small-text">Who we are</div>
         <RootTitle>
-          Hey, we’re Handshake — architects based in Seattle. Our projects range
+          Hey, we’re Sunken — architects based in London. Our projects range
           from small side-projects, to major industrial buildouts, and
           everything in between.
         </RootTitle>
@@ -36,9 +36,11 @@ export default function One() {
 
         <div className="btn">
           <div className="btn_inner">
-            <Link href="/">
-              <a className="button">Work with us</a>
-            </Link>
+            <button className="button button--skoll">
+              <span>
+                <span>Work with us</span>
+              </span>
+            </button>
           </div>
         </div>
       </div>

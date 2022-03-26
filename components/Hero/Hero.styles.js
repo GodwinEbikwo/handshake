@@ -12,7 +12,7 @@ export const Root = styled(m.div)`
 
   .left {
     position: absolute;
-    bottom: 22vw;
+    bottom: 20vw;
     left: var(--px-2);
     max-width: 5ch;
     font-size: var(--size-300);
@@ -48,7 +48,7 @@ export const Root = styled(m.div)`
 
   .right {
     position: absolute;
-    bottom: 22vw;
+    bottom: 20vw;
     right: var(--px-2);
     max-width: 19ch;
     text-align: right;
@@ -75,7 +75,7 @@ export const RootInner = styled.div`
 export const RootTitle = styled.h1`
   font-size: 17.5vw;
   text-align: center;
-  line-height: 0.85;
+  line-height: 0.825;
   z-index: 1;
 
   @media (min-width: 1024px) {

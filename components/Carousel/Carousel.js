@@ -9,7 +9,6 @@ const Carousel = () => {
   const [viewportRef, embla] = useEmblaCarousel({
     skipSnaps: false,
     loop: true,
-    speed: 4,
   });
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);

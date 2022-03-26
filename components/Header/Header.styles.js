@@ -54,7 +54,8 @@ export const HeaderInner = styled.div`
     cursor: pointer;
     transition: transform 200ms ease-in-out;
     font-size: var(--size-500);
-    font-weight: 600;
+    font-weight: 800;
+    font-family: var(--font-2);
   }
 
   .userNav_Box {

@@ -72,33 +72,36 @@ const Header = () => {
 
         <nav className="userNav_Box">
           <div className="userNav_Box_Inner">
-            <Link href="/">
-              <a aria-label="go to instagram profile">
-                <FancySpan>
-                  <m.span variants={navLogoReveal} className="block">
-                    <Insta />
-                  </m.span>
-                </FancySpan>
-              </a>
-            </Link>
-            <Link href="/">
-              <a aria-label="go to twiiter profile">
-                <FancySpan>
-                  <m.span variants={navLogoReveal} className="block">
-                    <Twitter />
-                  </m.span>
-                </FancySpan>
-              </a>
-            </Link>
-            <Link href="/">
-              <a aria-label="go to linkedin profile">
-                <FancySpan>
-                  <m.span variants={navLogoReveal} className="block">
-                    <LinkedIn />
-                  </m.span>
-                </FancySpan>
-              </a>
-            </Link>
+            <FancySpan>
+              <m.span variants={navLogoReveal} className="block">
+                <FancyLink
+                  destination="/Services"
+                  a11yText="Navigate to the Services page"
+                  label="Instagram"
+                  className="link link--metis"
+                />
+              </m.span>
+            </FancySpan>
+            <FancySpan>
+              <m.span variants={navLogoReveal} className="block">
+                <FancyLink
+                  destination="/Services"
+                  a11yText="Navigate to the Services page"
+                  label="Twitter"
+                  className="link link--metis"
+                />
+              </m.span>
+            </FancySpan>
+            <FancySpan>
+              <m.span variants={navLogoReveal} className="block">
+                <FancyLink
+                  destination="/Services"
+                  a11yText="Navigate to the Services page"
+                  label="LinkedIn"
+                  className="link link--metis"
+                />
+              </m.span>
+            </FancySpan>
           </div>
         </nav>
 

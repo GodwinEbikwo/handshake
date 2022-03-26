@@ -19,6 +19,9 @@ export const FooterInner = styled.div`
   .footer_bottom {
     bottom: 1em;
     left: 0;
+    font-weight: 800;
+    font-family: var(--font-2);
+    text-transform: uppercase;
   }
 `;
 
@@ -34,6 +37,11 @@ export const FooterContent = styled.div`
     width: 100%;
     @media (min-width: 1024px) {
       width: 66.666%;
+    }
+    h3 {
+      font-weight: 800;
+      font-family: var(--font-2);
+      text-transform: uppercase;
     }
   }
 

@@ -6,7 +6,7 @@ export default function Footer() {
       <FooterInner>
         <FooterContent>
           <div className="left_block">
-            <h1>HandShake</h1>
+            <h3>HandShake</h3>
 
             <div className="footer_brief">
               <p>
